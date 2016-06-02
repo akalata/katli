@@ -47,6 +47,8 @@ Until then run these from the katli folder as root:
 Followed by:
 `cd src/d7p56 && docker build -t 'kafei/d7p56' .`
 
+Be sure to include the trailing `.` and `cd` up to the katli folder before executing the second command.
+
 #### 3. Create a project under /repos
 
 You can clone your git repo under the "repos" folder, or use SVN, CVS, or
@@ -66,7 +68,7 @@ your database imports, files directory, etc.
 
 #### 4. Configure database. If importing a database, put that in the /sql folder.
 
-The file will be called project.sql.gz (and yes, it must be gzipped).
+The file must be called project.sql.gz (and yes, it must be gzipped).
 
 As an option you may also provide project_legacy.sql.gz (this will be useful if
 you plan on doing migrations).
